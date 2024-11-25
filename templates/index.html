@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones de Colores Diferentes</title>
+    <style>
+
+    .body {
+        display: block;
+
+    }
+         /* Diseño general de los botones */
+        .button {
+            display: inline-block;
+            padding: 10px 20px; /* Espaciado interno del botón */
+            font-size: 16px; /* Tamaño del texto */
+            font-weight: bold; /* Texto en negrita */
+            color: white; /* Color del texto */
+            border: none; /* Sin bordes */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Sin subrayado */
+            text-align: center; /* Centrado del texto */
+            cursor: pointer; /* Cambia el cursor al pasar */
+            transition: background-color 0.3s ease; /* Efecto de transición */
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Botón A - Verde */
+        .button-a {
+            background-color: #4CAF50; /* Verde */
+        }
+
+        .button-a:hover {
+            background-color: #45a049; /* Verde más oscuro */
+        }
+
+        /* Botón B - Azul */
+        .button-b {
+            background-color: #007BFF; /* Azul */
+        }
+
+        .button-b:hover {
+            background-color: #0056b3; /* Azul más oscuro */
+        }
+
+        /* Centrar los botones en la página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+            background-color: #f4f4f4; /* Fondo de la página */
+            font-family: Arial, sans-serif; /* Fuente general */
+        }
+
+        /* Espaciado entre botones */
+        .button + .button {
+            margin-left: 20px; /* Espacio entre botones */
+        }
+    </style>
+</head>
+<body>
+    <a href="/calculo" class="button button-a">Botón A</a>
+    <a href="/formulariob" class="button button-b">Botón B</a>
+</body>
+</html>
